@@ -90,7 +90,7 @@ app.use((err,req,res,next)=>{
   res.send(err);
 });
 
-app.use((req,res)=>{
+app.use("/",(req,res)=>{
   res.render("listings");
 });
 
