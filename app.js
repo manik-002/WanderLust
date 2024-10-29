@@ -91,5 +91,9 @@ app.use((err,req,res,next)=>{
 });
 
 app.use((req,res)=>{
+  req.render("/listings");
+});
+
+app.use((req,res)=>{
   res.send("page not found!");
 });
