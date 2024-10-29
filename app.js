@@ -91,7 +91,7 @@ app.use((err,req,res,next)=>{
 });
 
 app.use((req,res)=>{
-  req.render("/listings");
+  res.render("/listings");
 });
 
 app.use((req,res)=>{
