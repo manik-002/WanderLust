@@ -91,7 +91,7 @@ app.use((err,req,res,next)=>{
 });
 
 app.use((req,res)=>{
-  res.render("/listings/index.ejs");
+  res.render("/listings");
 });
 
 app.use((req,res)=>{
