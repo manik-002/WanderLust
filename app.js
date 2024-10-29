@@ -24,8 +24,8 @@ const mongostore = MongoStore.create({
     secret: process.env.SECRET
   }
 });
-mongostore.on(err,()=>{
-  console.log("error in mongo session store\n");
+mongostore.on('error', (err) => {
+  console.log("Error in Mongo session store\n");
   console.log(err);
 });
 
