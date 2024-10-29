@@ -90,10 +90,6 @@ app.use((err,req,res,next)=>{
   res.send(err);
 });
 
-app.use("/",(req,res)=>{
-  res.render("listings");
-});
-
 app.use((req,res)=>{
   res.send("page not found!");
 });
