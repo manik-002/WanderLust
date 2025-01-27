@@ -22,9 +22,14 @@ const mongostore = MongoStore.create({
   touchAfter : 24*60*60,
   crypto: {
     secret: process.env.SECRET
+  },
+  mongoOptions: {
+    ssl: true,
+    tls: true,
   }
+  
 });
-mongostore.on('error',()=>{
+mongostore.on('error',(err)=>{
   console.log("error in mongo session store\n");
   console.log(err);
 });
