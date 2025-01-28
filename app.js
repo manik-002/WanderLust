@@ -22,10 +22,6 @@ const mongostore = MongoStore.create({
   touchAfter : 24*60*60,
   crypto: {
     secret: process.env.SECRET
-  },
-  mongoOptions: {
-    ssl: true,
-    tls: true,
   }
   
 });
